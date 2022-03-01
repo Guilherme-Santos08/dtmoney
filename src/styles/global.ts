@@ -34,6 +34,14 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
+    transition: background .2s;
+
+    &.dark-mode {
+      --background: #121214;
+      --shape: #202024;
+      --text-body: #a9aec3;
+      --text-title: #c8cee3;
+    }
   }
 
   body, input, textarea, button {
@@ -87,5 +95,12 @@ export const GlobalStyle = createGlobalStyle`
     &:hover {
       filter: brightness(0.9);
     }
+  }
+
+  .react-switch {
+    background-color: transparent;
+    position: fixed !important;
+    right: 1.5rem;
+    top: 1.5rem;
   }
 `

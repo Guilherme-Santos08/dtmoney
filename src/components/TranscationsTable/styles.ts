@@ -15,12 +15,16 @@ export const Container = styled.div`
       line-height: 1.5rem;
     }
 
+    tr {
+      border-radius: 0.25rem;
+    }
+
     td {
       padding: 1rem 2rem;
       border: 0;
       background-color: var(--shape);
       color: var(--text-body);
-      border-radius: 0.25rem;
+      transition: background 0.2s;
 
       &:first-child {
         color: var(--text-title);
