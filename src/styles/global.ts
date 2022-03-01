@@ -64,6 +64,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .react-modal-overlay {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 1rem;
 
     position: fixed;
     top: 0;
@@ -99,8 +100,12 @@ export const GlobalStyle = createGlobalStyle`
 
   .react-switch {
     background-color: transparent;
-    position: fixed !important;
+    position: absolute !important;
     right: 1.5rem;
-    top: 1.5rem;
+    top: 6rem;
+
+    @media (max-width: 400px) {
+      top: 9.5rem;
+    }
   }
 `

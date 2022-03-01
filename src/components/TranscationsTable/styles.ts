@@ -39,4 +39,9 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: 748px) {
+    display: block;
+    overflow-x: auto;
+  }
 `
