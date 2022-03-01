@@ -12,7 +12,7 @@ Modal.setAppElement('#root')
 
 export function App() {
   const getThemeLocalStorage = localStorage.getItem('theme')
-  const theme = JSON.parse(getThemeLocalStorage || 'true')
+  const theme = JSON.parse(getThemeLocalStorage || 'false')
 
   const [isNewTransactionModalOpen, setIsNewTransactionModalOpen] =
     useState(false)
